@@ -1,12 +1,36 @@
-head
+html{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+h1{color:rgb(229, 98, 126);font-size: 70px; margin-bottom:10px; margin-top: 20px;}
+h2{color:rgb(229, 98, 126);}
 
-.gochi-hand-regular {
-    font-family: "Gochi Hand", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-body 
-{
+a{font-size: 22px; margin-right: 10px; margin-left: 10px;}
+a:link {color:rgb(255, 247, 227)}
+a:visited {color: rgb(255, 247, 227)}
+a:hover {color:rgb(255, 247, 227)}
+a:active {color:rgb(172, 227, 221)}
+
+nav{
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(255, 247, 227);
+  border-radius: 20px;
+
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+img{
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
   background-color: rgb(254, 204, 220);
 }
