@@ -1,21 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* fonte importada do google fonts */
 
 h1{color:rgb(229, 98, 126);font-size: 60px; margin-bottom:10px; margin-top: 20px;}
 h2{color:rgb(255, 247, 227);}
 h3{color: rgb(255, 247, 227);}
 li{color: rgb(255, 247, 227);}
+/* defini a cor e tamanhos das hierarquias diferentes de texto */
 
 a{font-size: 22px; margin-right: 10px; margin-left: 10px;}
 a:link {color:rgb(255, 247, 227)}
 a:visited {color: rgb(255, 247, 227)}
 a:hover {color:rgb(255, 247, 227)}
 a:active {color:rgb(172, 227, 221)}
+/* quis que os liks permanecessem da mesma cor em todos os estados, mudando apenas de aparencia quando ativos */
 
 header div
 {
  text-align: right;
 }
+/* navbar alinhada à direita */
 
 nav
 {
@@ -30,6 +34,7 @@ nav
   padding-bottom: 5px;
   padding-top: 5px;
 }
+/* borda e padding da navbar */
 
 body{
   background-color: pink;
@@ -38,6 +43,8 @@ body{
   font-weight: 600;
   font-style: normal;
 }
+/* cor de fundo, fonte para todas as paginas e o seu peso */
+
 .projects{
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +52,8 @@ body{
   gap: 2vw;
   padding: 0 1vw;
 }
+/* alinhamento das capas das paginas no 'work' para ficarem ao centro e responsive*/
+
 .images{
   max-width: 380px;
   height: 380px;
@@ -54,8 +63,9 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
+/* definiçaõ dos tamanhos das imagens */
+
 footer{
   height: 100px;
   display: flex;
@@ -64,7 +74,7 @@ footer{
   color: rgb(255, 247, 227);
   font-style: italic;
 }
-
+/* alinhamento ao centro e estilo do footer em todas as páginas */
 
 .carousel{
   display: flex;
@@ -77,78 +87,81 @@ footer{
   max-height:max-content;
   overflow: hidden;
 }
+/* definição de tamanho e funcionamento do carrousel no index */
 
 .slides{
-  display: flex;
-  width: 100%;
-  transition: transform 1s ease;
+display: flex;
+width: 100%;
+transition: transform 1s ease;
 }
 .slide{
-  width: 100%;
-  flex: 0 0 100%;
+width: 100%;
+flex: 0 0 100%;
 }
 .slide img{
-  width: 100%;
-  display: block;
-  border-radius: 10px;
-}
+width: 100%;
+display: block;
+border-radius: 10px;
+}/* tamanho e animação dos slides do carrousel */
 
 input[name="slides"]{
-  display: none;
+display: none;
 } 
 #slide1:checked ~ .slides {
-  transform: translateX(0%);
+transform: translateX(0%);
 }
 
 #slide2:checked ~ .slides {
-  transform: translateX(-100%);
+transform: translateX(-100%);
 }
 
 #slide3:checked ~ .slides {
-  transform: translateX(-200%);
+transform: translateX(-200%);
 }
 #slide4:checked ~ .slides {
-  transform: translateX(-300%);
+transform: translateX(-300%);
 }
+/* fazer com que os slides andem para o lado a quantidade certa */
 
 .navigation {
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  display: flex;
-  justify-content: center;
+position: absolute;
+width: 100%;
+bottom: 10px;
+display: flex;
+justify-content: center;
 }
 .navigation label {
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background-color: #ddd;
-  border-radius: 50%;
-  cursor: pointer;
+width: 10px;
+height: 10px;
+margin: 0 5px;
+background-color: #ddd;
+border-radius: 50%;
+cursor: pointer;
 }
+/* tamanho e funcionalidade dos botoes para mudar os slides */
 
 input[name="slides"]:checked + label {
-  background-color: #333;
+background-color: #333;
 }
 .fotobebe img{
-  width: 620px;
-  height: 590px;
+width: 620px;
+height: 590px;
 }
 figure{
-  padding: 4px;
-  margin:auto
+padding: 4px;
+margin:auto
 }
 figcaption{
-  padding: 2px;
-  text-align: center;
+padding: 2px;
+text-align: center;
 }
 .pastadesenhos img{
-  width: 390px;
-  height: 290px;
-  justify-content: space-evenly;
-  border-width: 5px;
-  border-color: rgb(229, 98, 126);
-  border-style: solid;
+width: 390px;
+height: 290px;
+justify-content: space-evenly;
+border-width: 5px;
+border-color: rgb(229, 98, 126);
+border-style: solid;
 
 }
 .pastaposters img{
@@ -160,10 +173,10 @@ border-color: rgb(229, 98, 126);
 border-style: solid;
 }
 .video img{
-  width: 390px;
-  height: 230px;
-  justify-content: space-evenly;
-  border-width: 5px;
+width: 390px;
+height: 230px;
+justify-content: space-evenly;
+border-width: 5px;
 border-color: rgb(229, 98, 126);
 border-style: solid;
 }
@@ -179,10 +192,20 @@ border-style: solid;
 width: 420px;
 height: 330px;
 }
+.heartstopper img{
+width: 600px;
+height: 350px;
+justify-content: space-evenly;
+border-width: 5px;
+border-color: rgb(229, 98, 126);
+border-style: solid;
+}
 figcaption{
-  padding: 2px;
-  text-align: center;
+padding: 2px;
+text-align: center;
 }
+/* definições de tamanhos e bordas de classes diferentes de imagens */
 p{
-  color: rgb(255, 247, 227);
+color: rgb(255, 247, 227);
 }
+/* cor do texto normal */
